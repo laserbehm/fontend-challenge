@@ -1,0 +1,175 @@
+ /* @media screen and (min-width: 320px) */
+
+  *, *:before, *:after {
+    box-sizing: border-box;
+  }
+
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+}
+
+/* styling for the carrier status bar */
+div.statusbar {
+  width: 100%;
+  color: #000000;
+}
+
+div.statusbar i, p {
+  display: inline-block;
+  margin: 1px;
+  font-size: 0.8125em;
+}
+
+p.carrier {
+  font-family: Roboto, sans-serif;
+}
+
+div.statusbar p.time {
+  font-family: Roboto, sans-serif;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+p.percent {
+  font-family: Roboto, sans-serif;
+  float: right;
+  margin: 2px;
+}
+
+/* styling for the header */
+div.top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 125px;
+  width: 100%;
+  background-color: #FDFDFD;
+  opacity: .99;
+  box-shadow: 0px 1px 1.5px rgba(0, 0, 0, 0.15);
+}
+
+.top h1 {
+  font-family: Roboto, sans-serif;
+  font-weight: bold;
+  font-size: 2.125em;
+  margin-top: 60px;
+  padding-left: 4%;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+}
+
+@media screen and (max-width: 320px) {
+  .top h1 {
+    font-size: 2em;
+  }
+}
+
+i.fa-chevron-left {
+  position: absolute;
+  height: 20.66;
+  width: 12.27;
+  left: 3.5%;
+  right: 84.29%;
+  top: 27.27%;
+  bottom: 25.77%;
+  color: #1652BA;
+}
+
+/* styling for the list of bus info */
+div.list {
+  margin-top: 125px;
+}
+
+div.businfo {
+  padding: 2.666666%;
+  font-family: Roboto, sans-serif;
+  border-bottom: 1px solid #C8C7CC;
+}
+
+div.busnumber {
+  background-color: #0076D6;
+  width: 22.65625%;
+  text-align: center;
+  font-size: 1.625em;
+  color: #ffffff;
+  box-shadow: 0px 1px 2px #e6e6e6;
+}
+
+div.minutes {
+  float: right;
+  font-size: 1.5em;
+  vertical-align: top;
+}
+
+div.minutes h1 {
+  color: #1652BA;
+}
+
+div.minutes h1.underfive {
+  color: #DB1F45;
+}
+
+div.minutes h1.underten {
+  color: #844B99;
+}
+
+div.busroute {
+  margin-left: 4%;
+  font-size: 1.1875em;
+  vertical-align: top;
+  width: 42%728%;
+}
+
+@media screen and (max-width: 320px) {
+  div.busroute {
+    font-size: 1em;
+  }
+}
+
+@media screen and (min-width: 575px) {
+  div.busroute {
+    font-size: 1.5em;
+  }
+}
+
+.busnumber, .busroute, .minutes {
+  display: inline-block;
+  height: 50.6px;
+  line-height: 50.6px;
+}
+
+/* styling for the bottom toolbar */
+div.bottom {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 44px;
+  width: 100%;
+  background-color: #FDFDFD;
+  opacity: .99;
+  box-shadow: 0px -1px 1.5px rgba(0, 0, 0, 0.15);
+}
+
+.bottom li {
+  display: inline-block;
+  margin: 0 0 0 1.5px;
+  color: #1652BA;
+}
+
+.fa-map {
+  position: absolute;
+  left: 10%;
+  right: 88.8%;
+  top: 27.27%;
+  bottom: 18%;
+}
+
+.fa-search {
+  position: absolute;
+  left: 85%;
+  right: 6.4%;
+  top: 27.27%;
+  bottom: 18%;
+}
