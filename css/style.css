@@ -1,4 +1,3 @@
- /* @media screen and (min-width: 320px) */
 
   *, *:before, *:after {
     box-sizing: border-box;
@@ -11,36 +10,36 @@ body {
 }
 
 /* styling for the carrier status bar */
-div.statusbar {
+.statusbar {
   width: 100%;
   color: #000000;
 }
 
-div.statusbar i, p {
+.statusbar i, p {
   display: inline-block;
   margin: 1px;
   font-size: 0.8125em;
 }
 
-p.carrier {
-  font-family: Roboto, sans-serif;
+.carrier {
+  font-family: "Roboto", sans-serif;
 }
 
-div.statusbar p.time {
-  font-family: Roboto, sans-serif;
+.statusbar .time {
+  font-family: "Roboto", sans-serif;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
 }
 
-p.percent {
+.percent {
   font-family: Roboto, sans-serif;
   float: right;
   margin: 2px;
 }
 
 /* styling for the header */
-div.top {
+.top {
   position: fixed;
   top: 0;
   left: 0;
@@ -52,7 +51,7 @@ div.top {
 }
 
 .top h1 {
-  font-family: Roboto, sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: bold;
   font-size: 2.125em;
   margin-top: 60px;
@@ -66,7 +65,7 @@ div.top {
   }
 }
 
-i.fa-chevron-left {
+.fa-chevron-left {
   position: absolute;
   height: 20.66;
   width: 12.27;
@@ -78,70 +77,99 @@ i.fa-chevron-left {
 }
 
 /* styling for the list of bus info */
-div.list {
+.list {
   margin-top: 125px;
 }
 
-div.businfo {
+.businfo {
   padding: 2.666666%;
-  font-family: Roboto, sans-serif;
+  font-family: "Roboto", sans-serif;
   border-bottom: 1px solid #C8C7CC;
+  line-height: 50.6px;
 }
 
-div.busnumber {
+.busnumber {
   background-color: #0076D6;
   width: 22.65625%;
   text-align: center;
   font-size: 1.625em;
   color: #ffffff;
   box-shadow: 0px 1px 2px #e6e6e6;
+
 }
 
-div.minutes {
+.minutes {
   float: right;
+  text-align: right;
   font-size: 1.5em;
   vertical-align: top;
 }
 
-div.minutes h1 {
-  color: #1652BA;
+.frequency {
+  position: relative;
+  font-weight: 100;
+  font-size: .5595em;
+  line-height: normal;
+  bottom: .5em;
+  color: #000000;
+  z-index: -1;
 }
 
-div.minutes h1.underfive {
+.underfive {
   color: #DB1F45;
 }
 
-div.minutes h1.underten {
+.underten {
   color: #844B99;
 }
 
-div.busroute {
-  margin-left: 4%;
-  font-size: 1.1875em;
-  vertical-align: top;
-  width: 42%728%;
+.overten {
+  color: #1652BA;;
 }
 
-@media screen and (max-width: 320px) {
-  div.busroute {
+.busroute {
+  margin-left: 4%;
+  font-size: 1.1875em;
+  vertical-align: text-bottom;
+  height: 50px;
+}
+
+.direction {
+  position: relative;
+  font-weight: 100;
+  font-size: .85em;
+  line-height: normal;
+  bottom: .5em;
+  z-index: -1;
+}
+
+@media screen and (max-width: 367px) {
+  .busroute {
     font-size: 1em;
+  }
+  .frequency {
+    font-size: .48em;
+  }
+  .direction {
+    font-size: .75em;
   }
 }
 
 @media screen and (min-width: 575px) {
-  div.busroute {
+  .busroute {
     font-size: 1.5em;
+  }
+  .frequency {
+    font-size: .8em;
   }
 }
 
 .busnumber, .busroute, .minutes {
   display: inline-block;
-  height: 50.6px;
-  line-height: 50.6px;
 }
 
 /* styling for the bottom toolbar */
-div.bottom {
+.bottom {
   position: fixed;
   bottom: 0;
   left: 0;

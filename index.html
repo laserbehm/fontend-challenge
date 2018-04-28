@@ -6,11 +6,13 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700" rel="stylesheet">
   </head>
+
   <body>
 
 <!--header/top of screen-->
-    <div class="top">
+    <section class="top">
       <div class="statusbar">
 
         <i class="fas fa-signal fa-sm"></i>
@@ -22,143 +24,96 @@
       </div>
       <i class="fas fa-chevron-left fa-2x"></i>
       <h1>Washington & State</h1>
-    </div>
+    </section>
 
 <!--list of bus info-->
-    <div class="list">
+    <ul class="list">
 
-        <div class="businfo">
-          <div class="busnumber">
-            <h1>124</h1>
-          </div>
-          <div class="busroute">
-            <h1>Navy Pier</h1>
-          </div>
-          <div class="minutes">
-            <h1 class="underfive">DUE</h1>
-          </div>
-        </div>
+        <li class="businfo">
+          <ul>
+          <li class="busnumber">124</li>
+          <li class="busroute">Navy Pier<h2 class="direction">eastbound</h2></li>
+          <li class="minutes underfive">DUE<h2 class="frequency">and 10 min</h2></li>
+        </ul>
+        </li>
 
-        <div class="businfo">
-          <div class="busnumber">
-            <h1>J14</h1>
-          </div>
-          <div class="busroute">
-            <h1>103rd/Stony Island</h1>
-          </div>
-          <div class="minutes">
-            <h1 class="underfive">2 min</h1>
-          </div>
-        </div>
+        <li class="businfo">
+          <ul>
+          <li class="busnumber">J14</li>
+          <li class="busroute">103rd/Stony Island<h2 class="direction">southbound</h2></li>
+          <li class="minutes underfive">2 min<h2 class="frequency">and 17 min</h2></li>
+        </ul>
+        </li>
 
-        <div class="businfo">
-          <div class="busnumber">
-            <h1>105</h1>
-          </div>
-          <div class="busroute">
-            <h1>Devon/Clark</h1>
-          </div>
-          <div class="minutes">
-            <h1 class="underten">6 min</h1>
-          </div>
-        </div>
+        <li class="businfo">
+          <ul>
+          <li class="busnumber">105</li>
+          <li class="busroute">Devon/Clark<h2 class="direction">northbound</h2></li>
+          <li class="minutes underten">6 min<h2 class="frequency">and 22 min</h2></li>
+        </ul>
+        </li>
 
-        <div class="businfo">
-          <div class="busnumber">
-            <h1>60</h1>
-          </div>
-          <div class="busroute">
-            <h1> Randolph/Harbor Dr</h1>
-          </div>
-          <div class="minutes">
-            <h1 class="underten">8 min</h1>
-          </div>
-        </div>
+        <li class="businfo">
+          <ul>
+          <li class="busnumber">60</li>
+          <li class="busroute">Randolph/Harbor Dr<h2 class="direction">eastbound</h2></li>
+          <li class="minutes underten">8 min<h2 class="frequency">and 28 min</h2></li>
+        </ul>
+        </li>
 
-        <div class="businfo">
-          <div class="busnumber">
-            <h1>124</h1>
-          </div>
-          <div class="busroute">
-            <h1>Navy Pier</h1>
-          </div>
-          <div class="minutes">
-            <h1>11 min</h1>
-          </div>
-        </div>
+        <li class="businfo">
+          <ul>
+          <li class="busnumber">124</li>
+          <li class="busroute">Navy Pier<h2 class="direction">southbound</h2></li>
+          <li class="minutes overten">10 min<h2 class="frequency">and 20 min</h2></li>
+        </ul>
+        </li>
 
-        <div class="businfo">
-          <div class="busnumber">
-            <h1>151</h1>
-          </div>
-          <div class="busroute">
-            <h1>Devon/Clark</h1>
-          </div>
-          <div class="minutes">
-            <h1>17 min</h1>
-          </div>
-        </div>
+        <li class="businfo">
+          <ul>
+          <li class="busnumber">6x</li>
+          <li class="busroute">Jackson Park X<h2 class="direction">reroute</h2></li>
+          <li class="minutes">N/A</li>
+        </ul>
+        </li>
 
-        <div class="businfo">
-          <div class="busnumber">
-            <h1>J14</h1>
-          </div>
-          <div class="busroute">
-            <h1>103rd/Stony Island</h1>
-          </div>
-          <div class="minutes">
-            <h1>23 min</h1>
-          </div>
-        </div>
+        <li class="businfo">
+          <ul>
+          <li class="busnumber">4</li>
+          <li class="busroute">Cottage Grove<h2 class="direction">out of service</h2></li>
+          <li class="minutes">N/A<h2 class="frequency">resumes 12:10am</h2></li>
+        </ul>
+        </li>
 
-        <div class="businfo">
-          <div class="busnumber">
-            <h1>6x</h1>
-          </div>
-          <div class="busroute">
-            <h1>Jackson Park X</h1>
-          </div>
-          <div class="minutes">
-            <h1>30 min</h1>
-          </div>
-        </div>
+        <li class="businfo">
+          <ul>
+          <li class="busnumber">20</li>
+          <li class="busroute">Madison<h2 class="direction">out of service</h2></li>
+          <li class="minutes">N/A<h2 class="frequency">resumes 12:10am</h2></li>
+        </ul>
+        </li>
 
-        <div class="businfo">
-          <div class="busnumber">
-            <h1>124</h1>
-          </div>
-          <div class="busroute">
-            <h1>Navy Pier</h1>
-          </div>
-          <div class="minutes">
-            <h1>37 min</h1>
-          </div>
-        </div>
+        <li class="businfo">
+          <ul>
+          <li class="busnumber">157</li>
+          <li class="busroute">Streeterville/Taylor<h2 class="direction">out of service</h2></li>
+          <li class="minutes">N/A<h2 class="frequency">resumes 6:00am</h2></li>
+        </ul>
+        </li>
 
-        <div class="businfo">
-          <div class="busnumber">
-            <h1>124</h1>
-          </div>
-          <div class="busroute">
-            <h1>Navy Pier</h1>
-          </div>
-          <div class="minutes">
-            <h1>50 min</h1>
-          </div>
-        </div>
+        <li class="businfo">
+          <ul>
+          <li class="endscroll">That's all for now!</li>
+        </ul>
+        </li>
 
-        <div class="businfo">
-          <div class="endscroll">
-            <h1>That's all for now!</h1>
-          </div>
-        </div>
-
-    </div>
+    </ul>
 
 <!--bottom of screen/toolbar-->
-    <div class="bottom">
+    <section class="bottom">
       <ul>
         <li><i class="far fa-map fa-lg"></i></li>
         <li><i class="fas fa-search fa-lg"></i></li>
       </ul>
-    </div>
+    </section>
+  </body>
